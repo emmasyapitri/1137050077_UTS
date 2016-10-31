@@ -1,0 +1,36 @@
+1. untuk menampilkan gambar membutuhkan sebuah tag xml,untuk menampilkan sebuah gambar baik itu dari bawaan aplikasinya yang biasanya disimpan di folder "drawable" ataupun dari luar aplikasi,nah untuk widget yang dignakan untuk menampilkan sebuah gambar dapat digunakan widget yang bernama "ImageView" seperti berikut:
+
+<ImageView 
+android:id="+@id/tampil"
+android:layout_width="fill_parent"
+android:layout_height="150dp"/>
+
+selanjutnya koding pada javanya 
+
+ImageView image = (ImageView) findViewById (R.id.tampil);
+image.setImageBitmap(R.drawable.enigma);
+
+2. android:layout_width merupakan contoh dari penggunaan layout pada android baik itu lay linear atau pun relative
+   android:text merupakan contoh dari penggunaan button pada android
+   android:src merupakan suatu  fungsi sebagai tempat utama yang di dalamnya terdapat file-file Activity bertipe Java Programming.
+ 
+3. camelcase : iLikePracticeSetsTheBest
+
+4. #linear layout jenis layout yang mengatur child element (contoh : TextView, Button, CheckBox, dll) ke dalam suatu baris horizontal ataupun vertikal. Untuk mengatur direction dari Linear Layout ini sendiri bisa mengedit pada atribut android:orientation.
+
+#relative layout adalah jenis layout yang mengatur tata letak child element menggunakan posisi relatif. Mungkin agak sedikit membingungkan, yang dimaksud relatif disini adalah letak suatu child mempunyai ketergantungan dengan child lain atau dengan parent nya.
+
+5. <RelativeLayout
+xmlns:android = "http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+<Button
+android:id=”@+id/lyla_text_view”
+android:layout_width=”wrap_content”
+android:layout_height=”wrap_content”
+android:layout_below=”@id/center”
+android:layout_alignParentRight=”true”
+android:textsize="24sp"
+android:text="click me"
+android:text=”Share”
+/>>
